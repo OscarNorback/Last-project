@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oscar-Norback</title>
+    <link rel="stylesheet" href="hemsida.css" />
+    <script src="hemsida.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Välkomen till Oscars värld</h1>
+      <nav class="primary-navigation">
+        <ul class="primary-navigation__links">
+          <li><a class="nav-link" href="#"> Hem </a></li>
+          <li>
+            <a class="nav-link" href="#"> Start </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#"> Min ide </a>
+          </li>
+          <li><a class="nav-link" href="#"> bilder </a></li>
+          <li>
+            <a class="nav-link" href="#"> Frågor </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="background-img"></section>
+    <div class="container">
+      <img src="/images/Oscar.png" alt="Bild på Oscar" class="image" />
+      <div class="overlay">Mitt namn är Oscar</div>
+    </div>
+    <h2>
+      Denna sida kommer vara till för att ta upp vad jag vill. Som olika ider
+      eller vad jag tycker och tänker.
+    </h2>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img class="carousel" src="/images/unknown_1.png" />
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img class="carousel" src="/images/Skopaddan.jpg" />
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img class="carousel" src="/images/natur.jpg" />
+        <div class="text">Caption Three</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+:root {
+  --fg-clr-normal: #111;
+  --fg-clr-gray: #3a3a3a;
+  --fg-clr-link: rgb(7, 78, 118);
+  --fg-clr-accent: rgb(0, 166, 255);
+  --fg-clr-white: #fff;
+
+  --bg-clr-header: rgb(15, 51, 231);
+  --bg-clr-blue: rgb(208, 215, 253);
+  --bg-clr-offwhite: whitesmoke;
+  --bg-clr-red: #ff0000;
+  --bg-clr-green: #baffb4;
+
+  --line-clr-black: #111;
+
+  --img-width-small: 300px;
+  --img-width-medium: 400px;
+  --img-width-full: 100%;
+  --img-width-supersmall: 150px;
+  --img-width-ultrasmall: 80px;
+
+  --padding-tight: 0.4rem;
+  --padding-normal: 5em;
+
+  --ft-weight-400: 400;
+  --ft-weight-700: 700;
+}
+
+*:active > * {
+  outline: 1px dotted red;
+}
+
+.header {
+  background-color: var(--bg-clr-offwhite);
+  min-width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.background-img {
+  background-image: url("/images/stokholm.jpg");
+  min-width: 100%;
+  min-height: 48rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.primary-navigation {
+  width: 100%;
+  min-height: 1rem;
+  font-size: 1.5rem;
+  justify-content: space-evenly;
+}
+
+.primary-navigation__links {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--bg-clr-red);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  color: var(--fg-clr-link);
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: var(--bg-clr-red);
+}
+
+h1 {
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.image {
+  display: block;
+  min-width: 5%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  max-width: 40%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+h2 {
+  display: grid;
+  place-items: center;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.carousel {
+  max-width: 1000px;
+  max-height: 500px;
+}
